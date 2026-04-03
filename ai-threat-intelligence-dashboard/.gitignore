@@ -22,82 +22,163 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+/eggs
+/bdist*
 
 # ==================== VIRTUAL ENVIRONMENTS ====================
 venv/
 ENV/
 env/
 .venv
+.venv/
+venv-py310/
+venv-py311/
+venv-py312/
 env.bak/
 venv.bak/
+venv39/
+.env.venv
 
 # ==================== IDE & EDITORS ====================
 .vscode/
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
 .idea/
 *.swp
 *.swo
 *~
 *.sublime-project
 *.sublime-workspace
+.vim/
+.emacs*
+.DS_Store
 
 # ==================== OS FILES ====================
 .DS_Store
 Thumbs.db
 .cache
+*.lnk
+desktop.ini
 
 # ==================== STREAMLIT ====================
 .streamlit/secrets.toml
 .streamlit/cache/
+.streamlit/logs/
 .streamlit/*.log
+streamlit_cache/
 
-# ==================== ML MODELS (LARGE FILES) ====================
+# ==================== ML MODELS & DATA (LARGE FILES) ====================
 *.pkl
 *.joblib
 *.model
 *.h5
 *.pt
 *.pth
+*.onnx
 ml/models/
+*.pickle
+saved_models/
 
 # ==================== DATA FILES ====================
-# Allow sample data only
-ml/data/*.csv
+data/
+datasets/
+*.csv
 !ml/data/sample_logs.csv
+!backend/tests/data/sample.csv
 
 # ==================== UPLOADS & TEMP FILES ====================
 uploads/
 temp/
 tmp/
 cache/
+.tmp/
 *.tmp
+*.temp
+temp_*
 
 # ==================== ENVIRONMENT VARIABLES ====================
 .env
 .env.local
 .env.*.local
 .env.production.local
+.env.*.example
+secrets/
+.secrets/
 
 # ==================== LOGGING ====================
 *.log
 *.pot
 logs/
+debug.log
+npm-debug.log*
+yarn-debug.log*
 
 # ==================== TESTING ====================
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
+.tox/
 .tox/
 .mypy_cache/
 .dmypy.json
 dmypy.json
-dist/
+.pytest_cache
+coverage.xml
+*.cover
 
-# ==================== IDE SPECIFIC ====================
-.vscode/settings.json
-.vscode/launch.json
-.vscode/extensions.json
-.idea/
-*.iml
+# ==================== DOCKER ====================
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# ==================== NODE (AVOID IF NOT USING) ====================
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ==================== DEPENDENCIES & BUILD ====================
+*.lock
+Pipfile.lock
+.venv/lib
+site-packages/
+
+# ==================== OS-SPECIFIC ====================
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+
+# ==================== BACKUP & ARCHIVE ====================
+*.bak
+*.backup
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ==================== MISC ====================
+.versionrc.json
+.npmrc
+*.pid
+*.seed
+*.pid.lock
+.eslintignore
+tox.ini
+
+# ==================== PROJECT-SPECIFIC ====================
+/ml/sample_data/
+/backend/test_cache/
+test_results/
+audit_logs/
+.vscode-profile
+
+# ==================== GIT ====================
+.gitconfig
+.gitattributes
 *.iws
 *.ipr
 
