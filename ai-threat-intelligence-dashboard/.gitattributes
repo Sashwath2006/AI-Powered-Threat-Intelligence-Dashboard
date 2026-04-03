@@ -1,0 +1,54 @@
+# Auto detect line endings and normalize them
+* text=auto
+
+# Python files
+*.py text eol=lf
+*.pyx text eol=lf
+*.pyi text eol=lf
+
+# Bash/Shell files
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Windows batch files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Docker files
+Dockerfile text eol=lf
+*.docker text eol=lf
+docker-compose*.yml text eol=lf
+
+# Git files
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
+# YAML files
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# JSON files
+*.json text eol=lf
+*.jsonc text eol=lf
+
+# Markdown/Text files
+*.md text eol=lf
+*.txt text eol=lf
+*.rst text eol=lf
+
+# Configuration files
+*.ini text eol=lf
+*.cfg text eol=lf
+*.conf text eol=lf
+*.toml text eol=lf
+
+# Binary files (don't touch line endings)
+*.pkl binary
+*.joblib binary
+*.h5 binary
+*.pt binary
+*.pth binary
+*.onnx binary
+*.whl binary
+*.egg binary

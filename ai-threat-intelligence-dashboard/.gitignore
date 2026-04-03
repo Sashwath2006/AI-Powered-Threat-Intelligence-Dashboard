@@ -178,7 +178,6 @@ audit_logs/
 
 # ==================== GIT ====================
 .gitconfig
-.gitattributes
 *.iws
 *.ipr
 
