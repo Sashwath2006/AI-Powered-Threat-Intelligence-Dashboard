@@ -1,5 +1,5 @@
-# Frontend dependencies — Python 3.12.8 (pinned via runtime.txt)
-# CRITICAL: pandas 2.1.4 has guaranteed prebuilt wheels (avoids 45+ min source builds)
+# Frontend dependencies — Python 3.10.14 (pinned via runtime.txt)
+# CRITICAL: pandas 2.1.4 has guaranteed prebuilt wheels for Python 3.10 (avoids 45+ min source builds)
 # All versions below install in <2 minutes with zero C compilation.
 
 streamlit==1.38.0
