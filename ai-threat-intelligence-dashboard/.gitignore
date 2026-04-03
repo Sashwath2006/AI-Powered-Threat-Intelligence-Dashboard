@@ -1,0 +1,151 @@
+# ==================== PYTHON ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==================== VIRTUAL ENVIRONMENTS ====================
+venv/
+ENV/
+env/
+.venv
+env.bak/
+venv.bak/
+
+# ==================== IDE & EDITORS ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ==================== OS FILES ====================
+.DS_Store
+Thumbs.db
+.cache
+
+# ==================== STREAMLIT ====================
+.streamlit/secrets.toml
+.streamlit/cache/
+.streamlit/*.log
+
+# ==================== ML MODELS (LARGE FILES) ====================
+*.pkl
+*.joblib
+*.model
+*.h5
+*.pt
+*.pth
+ml/models/
+
+# ==================== DATA FILES ====================
+# Allow sample data only
+ml/data/*.csv
+!ml/data/sample_logs.csv
+
+# ==================== UPLOADS & TEMP FILES ====================
+uploads/
+temp/
+tmp/
+cache/
+*.tmp
+
+# ==================== ENVIRONMENT VARIABLES ====================
+.env
+.env.local
+.env.*.local
+.env.production.local
+
+# ==================== LOGGING ====================
+*.log
+*.pot
+logs/
+
+# ==================== TESTING ====================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+dist/
+
+# ==================== IDE SPECIFIC ====================
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# ==================== EDITOR BACKUPS ====================
+*.bak
+*.backup
+*~
+
+# ==================== DATABASE ====================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==================== NODE (IF USED) ====================
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ==================== MACOS ====================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ==================== WINDOWS ====================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ==================== VSCODE WORKSPACE ====================
+*.code-workspace
+
+# ==================== MISC ====================
+.history/
+.vscode-server/
+
+!ml/data/sample_logs.csv
+
+# Cache
+.cache/
+.pytest_cache/
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore
+
+# Misc
+*.tmp
