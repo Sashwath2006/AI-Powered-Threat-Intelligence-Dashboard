@@ -58,7 +58,8 @@ st.markdown(
 )
 
 # Constants
-BACKEND_URL = "http://localhost:8000"
+import os
+BACKEND_URL = os.environ.get("BACKEND_URL", "http://localhost:8000")
 DEMO_LOG_FILE = "../ml/data/sample_logs.csv"  # Correct path from frontend directory
 
 # Initialize session state

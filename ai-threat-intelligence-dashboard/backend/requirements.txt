@@ -1,15 +1,16 @@
-# Backend dependencies — compatible with Python 3.11 / 3.12
-# numpy 1.26.4 + pandas 2.2.3 + scikit-learn 1.5.2 have prebuilt wheels; no C compilation needed.
+# Backend dependencies — Python 3.12.8 (pinned via runtime.txt)
+# CRITICAL: pandas 2.1.4 has guaranteed prebuilt wheels (avoids 45+ min source builds)
+# All versions have prebuilt wheels; install in <2 minutes with zero C compilation.
 
 fastapi==0.115.0
 uvicorn[standard]==0.30.6
-pydantic==2.9.2
-pydantic-settings==2.5.2
-python-dotenv==1.0.1
+pandas==2.1.4
 numpy==1.26.4
 scikit-learn==1.5.2
-pandas==2.2.3
+pydantic==2.9.2
+pydantic-settings==2.5.2
 httpx==0.27.2
 requests==2.32.3
+python-dotenv==1.0.1
 pytest==8.3.3
 pytest-asyncio==0.24.0
